@@ -9,7 +9,7 @@ public class Offre {
     private String diplomeRequis;
     private double salairePropose;
     private String localisation;
-    private String typeContrat;
+    private TypeContrat typeContrat;
 
     public Offre() {}
 
@@ -69,11 +69,11 @@ public class Offre {
         this.localisation = localisation;
     }
 
-    public String getTypeContrat() {
+    public TypeContrat getTypeContrat() {
         return typeContrat;
     }
 
-    public void setTypeContrat(String typeContrat) {
+    public void setTypeContrat(TypeContrat typeContrat) {
         this.typeContrat = typeContrat;
     }
 }
