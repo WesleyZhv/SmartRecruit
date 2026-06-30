@@ -34,3 +34,6 @@ build/
 
 ### Spring Boot ###
 application.properties
+
+### Models ###
+models/*.onnx

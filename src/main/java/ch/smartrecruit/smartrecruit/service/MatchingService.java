@@ -23,5 +23,5 @@ public class MatchingService {
     public List<Matching> getMatchingsForOffre(int offreId){
         return matchingRepository.findByOffreId(offreId);
     }
-    
+
 }
