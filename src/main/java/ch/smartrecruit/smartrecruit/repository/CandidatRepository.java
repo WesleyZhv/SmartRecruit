@@ -62,4 +62,13 @@ public class CandidatRepository {
         jdbcTemplate.update("DELETE FROM candidats WHERE id = ?", id);
     }
 
+    public Candidat findByEmail(String email) {
+        List<Candidat> result = jdbcTemplate.query(
+                "SELECT * FROM candidats WHERE email = ?",
+                (rs, rowNum) -> mapRow(rs, rowNum),
+                email
+        );
+        return result.isEmpty() ? null : result.get(0);
+    }
+
 }
